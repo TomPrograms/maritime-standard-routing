@@ -29,7 +29,10 @@ createParams is used to create a list of URL parameters based on the route keys 
 
 ```js
 const { createParams } = require("maritime-standard-routing");
-createParams("/hello", [{ name: "username", optional: false, offset: 1 }]);
+createParams({
+  path: "/hello",
+  keys: [{ name: "username", optional: false, offset: 1 }]
+});
 // returns: { username: 'hello' }
 ```
 
