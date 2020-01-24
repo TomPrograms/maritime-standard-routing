@@ -5,7 +5,7 @@
 ![powered by javascript badge](https://img.shields.io/badge/powered%20by-javascript-red)
 [![Maritime Development Badge](https://img.shields.io/badge/engine%20for-maritime-brightgreen)](https://github.com/t0mgithub/maritime)
 
-Routing engine to be used with Maritime to enable Express style routing. Maritime has been designed to allow different routing engines to be used to compile routes to regexp, to allow users to choose and change the syntax of the routing. A routing engine must contain `toRegex()` to convert a standard path to a regexp and a list of keys and `createParams()` to create an object of URL parameters from keys, original route, requested path and matches from regexp.match.
+Routing engine to be used with Maritime to enable Express style routing. Maritime has been designed to allow different routing engines to be used to compile routes to regexp, to allow users to choose and change the syntax of the routing. A routing engine must contain `toRegex()` to convert a standard path to a regexp and a list of keys and `createParams()` to create an object of URL parameters from keys, original route, requested path and matches from `regexp.match()`.
 
 ### Usage
 
