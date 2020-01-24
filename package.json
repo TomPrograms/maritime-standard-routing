@@ -1,0 +1,29 @@
+{
+  "name": "maritime-standard-routing",
+  "version": "1.0.3",
+  "description": "Standard routing engine used by default for Maritime routes.",
+  "main": "index.js",
+  "repository": "t0mgithub/maritime-standard-routing",
+  "scripts": {
+    "format": "prettier --write {**,**/**}/*.{js,md}"
+  },
+  "keywords": [
+    "route",
+    "routing",
+    "maritime"
+  ],
+  "files": [
+    "LICENSE",
+    "Readme.md",
+    "index.js"
+  ],
+  "author": "Tom",
+  "license": "MIT",
+  "homepage": "https://github.com/t0mgithub/maritime-standard-routing#readme",
+  "dependencies": {
+    "path-to-regexp": "^0.1.7"
+  },
+  "devDependencies": {
+    "prettier": "^1.19.1"
+  }
+}
