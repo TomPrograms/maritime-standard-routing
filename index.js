@@ -18,15 +18,18 @@ module.exports.toRegex = function(path, keys = [], options) {
 };
 
 /**
- * Create parameters from HTTP requested route and the array of route keys.
+ * Create parameters from route data.
  *
- * @param {String} [match] Array of matches returned by regex.exec().
- * @param {Array} [keys] Array of keys from routes.
+ * @param {Object} [data] Object containing data which can be used to create route parameters.
+ * @param {String} [data.match] Array of matches returned by regex.exec().
+ * @param {Array} [data.keys] Array of keys from routes.
+ * @param {String} [data.path] Route requested by HTTP request.
  *
  * @return {Object} Object containing all route params.
  * @private
  */
-module.exports.createParams = function(match, keys) {
+module.exports.createParams = function(data) {
+  let { match, keys } = data;
   params = {};
 
   for (let i = 1; i < match.length; i++) {
