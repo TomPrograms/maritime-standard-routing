@@ -26,7 +26,6 @@ module.exports.toRegex = function(path, keys = [], options) {
  * @param {String} [data.path] Route requested by HTTP request.
  *
  * @return {Object} Object containing all route params.
- * @private
  */
 module.exports.createParams = function(data) {
   let { match, keys } = data;
