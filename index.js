@@ -23,7 +23,6 @@ module.exports.toRegex = function(path, keys = [], options) {
  * @param {Object} [data] Object containing data which can be used to create route parameters.
  * @param {String} [data.match] Array of matches returned by regex.exec().
  * @param {Array} [data.keys] Array of keys from routes.
- * @param {String} [data.path] Route requested by HTTP request.
  *
  * @return {Object} Object containing all route params.
  */

@@ -25,7 +25,7 @@ toRegex("/:username", []);
 
 #### createParams()
 
-createParams is used to create a list of URL parameters based on provided data - different engines can use data such as path, keys and match data from the regexp.
+createParams is used to create a list of URL parameters based on request path and keys - different engines can use data such as path, keys and match data from the regexp.
 
 ```js
 const { createParams } = require("maritime-standard-routing");
