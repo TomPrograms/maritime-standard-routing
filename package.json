@@ -1,6 +1,6 @@
 {
   "name": "maritime-standard-routing",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Standard routing engine used by default for Maritime routing.",
   "main": "index.js",
   "repository": "TomPrograms/maritime-standard-routing",
